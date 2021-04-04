@@ -31,93 +31,106 @@
 </header>  
 
 <main>
-    <div class="container my-3">
-        <div class="row align-items-start">
-            <h3>Project 1</h3>        
+    <div class="container form-group my-3 justify-content-centre w-75">
+        
+        <div>
+            <h3>Project 1</h3>
         </div>
+        
+        <div class="container my-3 bg-light">
+            <div class="row align-items-start">
+              <div class="col">
+                Created by <br>
+                Ade Chris
+              </div>
+              <div class="col">
+                Date Created <br>
+                2020-08-30
+              </div>
+              <div class="col"> 
+                Last Updated <br>
+                2020-08-30
+              </div>
+              <div class="col d-flex my-2 justify-content-end">
+                <a class= "nav-link btn btn-primary" href="viewproject.html">View Project</a>
+              </div>
+            </div>
+
+                                 
+        </div>
+    </div>
+        
     
-    <div class="container my-3 bg-light">
-        <div class="row align-items-start">
-           <div class="col">Created By
-           <br>Ade Chris
-           </div>
-           <div class="col">Date Created
-            <br>2020-08-30
-           </div>
-           <div class="col">Last Updated
-            <br>2020-08-30
-           </div>
-           <div class="col d-flex my-2 justify-content-end">
-            <a class= "nav-link btn btn-primary" href="viewproject.html">View Project</a>
-         </div>
-         </div>
+  
+    <div class="container form-group justify-content-center w-75">
+        
+      <form>
+                
+          <div class="row">
+            <div class="col">
+              <h4>Edit Project</h4>
+            </div>
+
+            <div class="col">
+              <h4>Manage Project Files</h4>
+            </div>
+          </div>  
+
+
+          <div class="form-row">
+                <div class="col-md-6">
+                  <label for="firstName">Project Name</label>
+                  <input type="text" name= "name" class="form-control" id="projectName" placeholder="Project 1">
+                </div>
+
+                <div class="input-group col-md-6 mb-5">
+                    <input type="text" class="form-control" placeholder="Click to open File Browser" aria-label="Click to open File Browser" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">Browse</span>
+                </div>
+               
+          </div>
+
+          <div class="form-row"> 
+              <div class="col-md-6">
+                    <label for="projectAbstract">Project Abstract</label>
+                    <textarea class="form-control" name= "abstract" id="textarea" rows="3" placeholder="Project 1 is a very interesting project"> </textarea>
+              </div>
+              <div class="col-md-6">
+                <div class="card" style="width:35rem;">
+                    <div class="card-header">
+                      Project Files
+                    </div>
+                    <ul class="list-group list-group-flush text-center">
+                      <li class="list-group-item">No file upload yet</li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+                
+
+          <div class="form-row">
+            <div class="col-md-6">
+                    <label for="author">Author(s)</label>
+                    <input type="text" name= "authors" class="form-control" id="author" placeholder="Ade Chris">
+            </div>
+          </div>
+            
+          <div class="form-row">
+            <div class="col-md-6">
+                <label for="tags">Tag(s)</label>
+                <input type="text" name= "tags" class="form-control" id="tags" placeholder="#web">
+            </div>
+                
+          </div>
+
+                <button type="submit" class="btn btn-primary my-2">save</button>
+                </div>
+          </div>
+            
+      </form>
+      
     </div>
 
-    <form>
-                
-        <div class="row">
-          <div class="col">
-            <h4>Edit Project</h4>
-          </div>
-
-          <div class="col">
-            <h4>Manage Project Files</h4>
-          </div>
-        </div>  
-
-
-        <div class="form-row">
-              <div class="col-md-6">
-                <label for="projectName">Project Name</label>
-                <input type="text" name= "projectName" class="form-control" id="projectName" placeholder="Project 1">
-              </div>
-
-              <div class="input-group col-md-6 mb-5">
-                  <input type="text" class="form-control" placeholder="Click to open File Browser" aria-label="Click to open File Browser" aria-describedby="basic-addon2">
-                  <span class="input-group-text" id="basic-addon2">Browse</span>
-              </div>
-             
-        </div>
-
-        <div class="form-row"> 
-            <div class="col-md-6">
-                  <label for="projectAbstract">Project Abstract</label>
-                  <textarea class="form-control" name= "abstract" id="textarea" rows="3" placeholder="Project 1 is a very interesting project">
-                    </textarea>
-            </div>
-            <div class="col-md-6">
-              <div class="card" style="width:35rem;">
-                  <div class="card-header">
-                    Project Files
-                  </div>
-                  <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item">No file upload yet</li>
-                  </ul>
-              </div>
-            </div>
-        </div>
-              
-
-        <div class="form-row">
-          <div class="col-md-6">
-                  <label for="author">Author(s)</label>
-                  <input type="text" name= "authors" class="form-control" id="author" placeholder="Ade Chris">
-          </div>
-        </div>
-          
-        <div class="form-row">
-          <div class="col-md-6">
-              <label for="tags">Tag(s)</label>
-              <input type="text" name= "tags" class="form-control" id="tags" placeholder="#web">
-          </div>
-              
-        </div>
-
-              <button type="submit" class="btn btn-primary my-2">Save</button>
-              </div>
-        </div>
-          
-    </form>
 </main>
 
 
